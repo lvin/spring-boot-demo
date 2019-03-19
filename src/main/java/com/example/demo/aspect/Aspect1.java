@@ -15,7 +15,6 @@ public class Aspect1 {
 
     @Pointcut("execution(public * com.example.demo.service.pa..*.*(..))")
     public void func(){}
-    InheritableThreadLocal
 
     @After("func()")
     public void aspect1After(JoinPoint joinPoint) {
